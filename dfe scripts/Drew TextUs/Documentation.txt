@@ -1,0 +1,37 @@
+new phone search system for textus
+reduces search time for phone numbers using indexing
+
+to use:
+to search for a phone number such as: 
++1 (987) 654-3210 ext. 123
+use:
+exec sp_SearchPhoneNumeric '9876543210'
+
+specifications:
+ignores any non-numeric characters in the phone number
+accounts for leading '1' (but not other country codes, yet)
+accounts for trailing numerals (e.g. extensions, comments)
+does not account for leading numerals other than 1
+ignores any phone numbers beginning with http
+
+installation:
+run the "implement indexed phone search" script - may take up to 5 minutes
+if using medical, run "add direct phone - medical only" script
+
+to switch between new and old search functions:
+use "switch to indexed phone search"
+and "switch to unindexed phone search"
+
+implementation:
+A trigger syncs an indexed table called ParsedPhones
+This filters out http phone numbers, separates out country code (just 1 for now), and removes the non-numeric characters from the phone number
+
+efficacy:
+Of our four clients using TextUs, this search will find over 99.98% of valid phone numbers
+
+performance:
+In my test database (500 000 people with phone numbers), the search time drops from 1000ms to 16ms
+insert time for 10 000 people with phone numbers rises from 2s to 10s
+
+ideas for future:
+Support international country codes

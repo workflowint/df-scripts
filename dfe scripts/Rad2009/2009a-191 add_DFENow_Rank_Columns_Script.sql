@@ -1,0 +1,6 @@
+
+ALTER TABLE ProjectsCallStatus
+ADD DFENowRank1 VARCHAR(100)
+
+ALTER TABLE ProjectsCallStatus
+ADD DFENowRank2 VARCHAR(100)

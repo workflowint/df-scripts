@@ -1,0 +1,1 @@
+ALTER Table UserLastTouch add UseUserEmailNotification bit

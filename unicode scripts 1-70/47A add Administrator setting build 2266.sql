@@ -1,0 +1,1 @@
+alter table ClientConfig add CreateSovrenSkills bit not null default(1)

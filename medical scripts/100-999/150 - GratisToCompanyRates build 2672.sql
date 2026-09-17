@@ -1,0 +1,1 @@
+ALTER TABLE LinkCompaniesToRates add BillGratisHours float,PayGratisHours float

@@ -1,0 +1,1 @@
+ALTER TABLE Templates add TemplateDocuSignText varchar(max), TemplateDocuSignSubject varchar(100)

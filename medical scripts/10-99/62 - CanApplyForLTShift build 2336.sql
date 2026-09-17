@@ -1,0 +1,1 @@
+ALTER TABLE ProjectsCallStatus add CanApply bit

@@ -1,0 +1,1 @@
+ALTER TABLE Ranks add Color int, FontColor int

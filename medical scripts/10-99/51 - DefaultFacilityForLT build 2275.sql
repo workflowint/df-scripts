@@ -1,0 +1,1 @@
+ALTER TABLE LinkAddressToMCRContract add DefaultFacility bit

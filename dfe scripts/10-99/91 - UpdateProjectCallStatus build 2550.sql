@@ -1,0 +1,3 @@
+ALTER TABLE ProjectsCallStatus DISABLE TRIGGER ProjectsCallStatusUpdateG
+UPDATE ProjectsCallStatus set StatusDescription=NULL where StatusDescription=''
+ALTER TABLE ProjectsCallStatus ENABLE TRIGGER ProjectsCallStatusUpdateG

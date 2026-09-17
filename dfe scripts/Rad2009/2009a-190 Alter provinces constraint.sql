@@ -1,0 +1,9 @@
+ALTER TABLE Provinces
+DROP CONSTRAINT [PK_Provinces]
+
+GO
+
+ALTER TABLE Provinces
+ADD CONSTRAINT [PK_Provinces] PRIMARY KEY CLUSTERED ( [ProvinceID] ASC )
+
+GO

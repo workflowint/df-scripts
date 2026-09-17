@@ -1,0 +1,1 @@
+ALTER TABLE JobOrders add VMCVendorCompaniesID int

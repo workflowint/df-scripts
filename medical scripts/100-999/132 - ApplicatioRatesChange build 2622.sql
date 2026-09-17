@@ -1,0 +1,1 @@
+ALTER TABLE LinkMedApplicationsToRates add BillRateValue money

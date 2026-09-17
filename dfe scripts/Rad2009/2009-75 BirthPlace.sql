@@ -1,0 +1,1 @@
+ALTER TABLE People ALTER COLUMN BirthPlace varchar(255)

@@ -1,0 +1,1 @@
+ALTER TABLE EmailAddress add Unsubscribe bit

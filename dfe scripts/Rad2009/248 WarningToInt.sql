@@ -1,0 +1,3 @@
+ALTER TABLE Task ALTER COLUMN Warning int
+GO
+ALTER TABLE TaskData ALTER COLUMN Warning int

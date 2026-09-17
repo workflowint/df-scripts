@@ -1,0 +1,1 @@
+ALTER TABLE ClientConfig ADD ShowTimesheetsInvite bit

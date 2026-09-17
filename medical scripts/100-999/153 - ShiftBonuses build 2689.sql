@@ -1,0 +1,1 @@
+ALTER TABLE JobOrderSchedule add PayBonus money, BillBonus money

@@ -1,0 +1,1 @@
+ALTER Table Companies add ApplicationWebPage varchar(255)

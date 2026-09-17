@@ -1,0 +1,1 @@
+ALTER TABLE People add Phone2IsInvalid bit, Phone3IsInvalid bit, Phone4IsInvalid bit,Phone5IsInvalid bit

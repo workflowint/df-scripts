@@ -1,0 +1,1 @@
+grant execute on type::idlist to deskflowusers

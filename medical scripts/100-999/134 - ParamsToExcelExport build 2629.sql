@@ -1,0 +1,1 @@
+ALTER TABLE ExportToExcel add ParamData varbinary(MAX)

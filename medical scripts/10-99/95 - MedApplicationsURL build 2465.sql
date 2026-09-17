@@ -1,0 +1,1 @@
+ALTER TABLE MedApplications add URL varchar(255)

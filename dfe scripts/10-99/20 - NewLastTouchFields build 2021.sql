@@ -1,0 +1,1 @@
+ALTER TABLE UserLastTouch add OpenDirectHire tinyint, OpenContract tinyint, OpenMRContract tinyint

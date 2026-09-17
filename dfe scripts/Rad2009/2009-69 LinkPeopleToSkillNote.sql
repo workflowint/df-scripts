@@ -1,0 +1,1 @@
+ALTER TABLE LinkPeopleToSkills add SkillNotes varchar(255)

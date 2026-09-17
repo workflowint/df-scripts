@@ -1,0 +1,1 @@
+ALTER TABLE TimeSheets add ShiftBonusBill money

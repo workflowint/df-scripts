@@ -1,0 +1,1 @@
+ALTER TABLE LinkInternalInterviewsToResults ALTER COLUMN ShortResNotes text

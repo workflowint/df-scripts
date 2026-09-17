@@ -1,0 +1,30 @@
+ALTER TABLE UserLastTouch add OpenAHDialogOnCall bit
+GO
+ALTER TABLE ClientConfig add UseSpecialtySkills bit
+GO
+
+CREATE TABLE [dbo].[LinkSpecialtyToSkills](
+	[LinkSpecialtyToSkillsID] [int] IDENTITY(1,1) NOT NULL,
+	[Specialty] [varchar](255) NULL,
+	[SkillsID] [int] NULL,
+	[SkillCategoryID] [int] NULL,
+ CONSTRAINT [PK_LinkSpecialtyToSkills] PRIMARY KEY CLUSTERED 
+(
+	[LinkSpecialtyToSkillsID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+CREATE NONCLUSTERED INDEX [LinkSpecialtyToSkills_SkillsID] ON [dbo].[LinkSpecialtyToSkills]
+(
+	[SkillsID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
+CREATE NONCLUSTERED INDEX [LinkSpecialtyToSkills_Specialty] ON [dbo].[LinkSpecialtyToSkills]
+(
+	[Specialty] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
+
+GRANT  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[LinkSpecialtyToSkills] TO [DeskFlowUsers]
+
+

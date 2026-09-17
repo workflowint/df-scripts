@@ -1,0 +1,2 @@
+ALTER TABLE WebLogins
+ADD UNIQUE (LoginName)

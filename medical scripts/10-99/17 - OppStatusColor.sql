@@ -1,0 +1,1 @@
+ALTER TABLE OpportunityStatuses add FontColor int, Color int

@@ -1,0 +1,1 @@
+ALTER TABLE ClientConfig add TSDocusignSubject varchar(255), TSDocusignBody varchar (max)

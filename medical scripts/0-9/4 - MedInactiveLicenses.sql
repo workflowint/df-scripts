@@ -1,0 +1,1 @@
+ALTER TABLE People add Inactivelicenses varchar(255)

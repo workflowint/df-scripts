@@ -1,0 +1,1 @@
+ALTER TABLE CompaniesAliases add EffectiveDate datetime

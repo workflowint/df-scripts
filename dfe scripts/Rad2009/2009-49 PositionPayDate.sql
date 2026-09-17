@@ -1,0 +1,1 @@
+ALTER TABLE Positions add PayDate datetime

@@ -1,0 +1,1 @@
+ALTER TABLE RateTypes add Daily bit

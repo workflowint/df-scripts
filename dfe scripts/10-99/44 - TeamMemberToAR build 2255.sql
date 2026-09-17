@@ -1,0 +1,1 @@
+ALTER TABLE ProjectsClientTeams add UseInAutomaticResponse bit

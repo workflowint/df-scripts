@@ -1,0 +1,8 @@
+ALTER TABLE Document
+ADD [DFENow] [bit] NULL DEFAULT(0)
+GO
+ALTER TABLE Document DISABLE TRIGGER DocumentUpdate
+UPDATE Document SET DFENow = 0 where DFENow IS NULL
+ALTER TABLE Document ENABLE TRIGGER DocumentUpdate
+
+

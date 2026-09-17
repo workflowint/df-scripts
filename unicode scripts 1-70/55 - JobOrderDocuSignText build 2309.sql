@@ -1,0 +1,1 @@
+ALTER TABLE JobOrders add JobOrdersDocuSignText nvarchar(max)

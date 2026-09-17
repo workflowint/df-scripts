@@ -1,0 +1,1 @@
+ALTER TABLE ClientConfig add AHForPerson varchar(255)

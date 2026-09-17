@@ -1,0 +1,1 @@
+ALTER TABLE ProjectsSources add Rank varchar(100), Rank2 varchar(100)

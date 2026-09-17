@@ -1,0 +1,1 @@
+ALTER Table RateTypes add Color int

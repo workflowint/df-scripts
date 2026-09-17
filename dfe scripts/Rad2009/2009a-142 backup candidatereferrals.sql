@@ -1,0 +1,3 @@
+SELECT *
+INTO CandidateReferrals_BACKUP
+FROM CandidateReferrals

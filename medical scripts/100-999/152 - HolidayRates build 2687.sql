@@ -1,0 +1,23 @@
+ALTER TABLE RateTypes add HolidayRate bit
+GO
+CREATE TABLE [dbo].[Holidays](
+	[HolidaysID] [int] IDENTITY(1,1) NOT NULL,
+	[Description] [varchar](200) NULL,
+	[HolidayDate] [datetime] NOT NULL,
+	[Federal] [bit] NULL,
+	[States] [varchar](255) NULL,
+ CONSTRAINT [PK_Holidays] PRIMARY KEY CLUSTERED 
+(
+	[HolidaysID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+GRANT  REFERENCES ,  SELECT ,  UPDATE ,  INSERT ,  DELETE  ON [dbo].[Holidays]  TO [DeskFlowUsers]
+GO
+CREATE NONCLUSTERED INDEX [NonClusteredIndex-20250904-151701] ON [dbo].[Holidays]
+(
+	[HolidayDate] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
+

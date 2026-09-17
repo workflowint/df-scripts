@@ -1,0 +1,1 @@
+ALTER TABLE UserLastTouch add OpenMyContractDoctors tinyint

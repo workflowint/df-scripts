@@ -1,0 +1,12 @@
+ALTER TABLE Companies add BillRateRangeC varchar(20),
+BillMeasureC varchar(20), ClientPayHolidayRatesC varchar(20),
+ClientPayPerDiemC varchar(20), ClientApprovedperDiemC money,
+PayRateRangeC varchar(20), PayMeasureC varchar(20),
+ClientPayMaxC varchar(50), BillingNotesC varchar(max),
+ClientPayAirfareC varchar(20), ClientArrangeAirfareC varchar(20),
+ClosestAiroportC varchar(50),ClientPayAirportParkingC varchar(20),
+ClientPayShuttleC varchar(20), ClientPayCarC varchar(20),
+ClientArrangeCarC varchar(20), ClientPayGasC varchar(20),
+ClientPayHotelC varchar(20), ClientArrangeHotelC varchar(20),
+ClientPayMileageFromAiroportC varchar(20), ClientPayAllMileageC varchar(20),
+MileageRateC money, TravelHomeC varchar(255), TravelNoteC varchar(max)
